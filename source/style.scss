@@ -1,0 +1,25 @@
+.block {
+  display: block;
+
+  &__element {
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+
+    &--modifier {
+      &::placeholder {
+        color: blue;
+      }
+    }
+  }
+}
+
+/*GUIDE
+
+Module|Example
+
+<div class="block">
+  <input class="block__element block__element--modifier" type="text" placeholder="Your text here..." />
+</div>
+
+*/
